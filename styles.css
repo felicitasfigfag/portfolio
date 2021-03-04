@@ -1,0 +1,121 @@
+:root {
+    --main-bg-color: #807297;
+    --main-text-color: #3C1642;
+    --pink-color: #F4B9B2;
+    --yellow-color: #FFE66D;
+    --green-color: #3DDC97;
+  }
+
+  @font-face {
+    font-family: mainFont;
+    src: url(./fonts/chicago/ChicagoFLF.ttf);
+    /* text-shadow: 0.5px 0px white, 1.5px 0px white; 
+    color: transparent; 
+    letter-spacing: 1px; */
+  }
+  @font-face{
+    font-family: titleFont;
+    src: url(./fonts/chicago/ChicagoFLF.ttf);
+    font-weight: bold;
+  }
+  @font-face{
+    font-family: secondFont;
+    src: url(./fonts/px_sans_nouveaux/px_sans_nouveaux.ttf);
+  }
+
+  body{
+    /* background-image: url(./resources/fondos/pink.gif); */
+    background-color: var(--main-bg-color);
+    color:var(--main-text-color);
+    padding: 0;
+    margin: 0;
+    font-family: mainFont;
+  }
+  .container{
+    position: relative;
+  }
+  /* NAV BAR */
+  .navbar{
+    background-color: var(--yellow-color);
+    margin: 0;
+    display: grid;
+    grid-template-columns: 3(20% 60% 20%);
+    
+  }
+  .navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+ .nav-btn{
+    color: var(--main-text-color);
+    border: none;
+    margin-right: 5px;
+    padding-top: 3px;
+    background-color: unset;
+    color: var(--main-text-color);
+    font-family: mainFont;
+    font-size: 15px; 
+    font-weight: bold;
+    word-spacing: 5px;;
+    letter-spacing: 1px;
+    cursor:pointer;
+ }
+ .nav-icon{
+     width: 20px;
+ }
+ .ul1{
+     display: flex;
+     justify-content: flex-start;
+ }
+ .ul2{
+     grid-column: 3/4;
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ /* center */
+
+/* FOLDERS */
+figure{
+    color: var(--main-text-color);
+    font-family: mainFont;
+    font-size: 8px;
+    padding: 0;
+}
+.folder-container{
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(3, 25%);
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 10px;
+    overflow: hidden;
+}
+figure button{
+    background-color: unset;
+    border:unset;
+    cursor: pointer;
+}
+
+/* Arriba | Derecha | Abajo | Izquierda */
+.folder{
+   margin: 30px 20px  20px 10px;
+}
+
+.row-1{
+    grid-row: 1/2;
+}
+.row-2{
+    grid-row: 2/3;
+}
+.row-3{
+    grid-row: 3/4;
+}
+.folder img{
+    width: 100%;
+}
+

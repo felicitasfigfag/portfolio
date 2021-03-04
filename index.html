@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./windowstyles.css">
+    <title>Feli Figueroa</title>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar">
+        <ul class="ul1">
+            <li><button class="nav-btn">FELICITAS FIGUEROA</button></li>
+        </ul>
+        <ul class="ul2">
+            <li><button class="nav-btn">
+                <img class="nav-icon" src="https://img.icons8.com/ios/50/000000/room-sound.png"/>
+            </button></li>
+            <li><button class="nav-btn">
+                <img class="nav-icon" src="https://img.icons8.com/material-outlined/24/000000/full-screen--v1.png"/>
+            </button></li>
+            <li><button class="nav-btn">Sun 8 Oct 1995</button></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <!-- folders -->
+    <aside class="folder-container">
+        <figure id="video" class="folder video-icon row-1">
+            <button class="folder-btn">
+                <img src="https://img.icons8.com/plasticine/100/000000/film-reel.png"/>
+                Videos
+            </button>
+        </figure>
+        <figure id="contact"class="folder contact-icon row-3">
+            <button class="folder-btn">
+                <img src="https://img.icons8.com/plasticine/100/000000/chat--v1.png"/>
+            Contact
+        </button>
+        </figure>
+        
+        <figure id="about" class="folder about-icon row-1">
+            <button class="folder-btn">
+                <img src="https://img.icons8.com/plasticine/100/000000/user-female.png"/>
+            About
+        </button>
+        </figure>
+        <figure id="education" class="folder education-icon row-2">
+            <button class="folder-btn">
+                <img src="https://img.icons8.com/plasticine/100/000000/document.png"/>
+            Education
+        </button>
+        </figure>
+        <figure id="projects" class="folder projects-icon row-1">
+            <button class="folder-btn">
+                <img src="https://img.icons8.com/plasticine/100/000000/opened-folder.png"/>
+            Projects
+        </button>
+        </figure>
+        <figure id="skills" class="folder skills-icon row-2">
+            <button class="folder-btn">
+                <img src="https://img.icons8.com/plasticine/100/000000/design--v1.png"/>
+            Skills
+        </button>
+        </figure>
+        </figure>
+        <figure id="music"class="folder music-icon row-2">
+            <button class="folder-btn">
+                <img src="https://img.icons8.com/plasticine/100/000000/lo-fi.png"/>
+            Music
+        </button>
+        </figure>
+    </aside>
+    <!-- video -->
+    <section class="window video-window hide" draggable="true">  
+        <!-- sacar hide dsp -->
+        <header class="window-header">
+            <h2 class="window-title">Video Player</h2>
+                <button class="close-btn">x</button>
+        </header>
+        <div class="video-container">
+            <video class="video"src="./resources/vhs-short.mp4" width="760px" height="400px" controls>Vhs1</video>
+        </div>
+    </section>
+    <!-- about -->
+    <section class="window about-window hide" draggable="true">
+        <!-- sacar hide dsp -->
+        <header class="window-header">
+            <h2 class="window-title">About</h2>
+                <button class="close-btn">x</button>
+        </header>
+        <div class="window-content">
+            <p>Hey!</p>
+            <p>I'm Felicitas Figueroa Fagalde,</p>
+            <p>a 25 year old Front-End Developer</p>
+            <p>from Tucumán, Argentina.</p>
+            <p>Get to now more about me and my work by </p>
+            <p>opening the different folders.</p>
+            <p>:)</p>
+        </div>
+        <figure class="note-footer"></figure>
+    </section>
+    <!-- education -->
+    <section class="window education-window hide" draggable="true">
+        <header class="window-header">
+            <h2 class="window-title">Education</h2>
+                <button class="close-btn">x</button>
+        </header>
+        <div class="education-button-container">
+            <button class="edu-btn" id="certification">Certifications</button>
+            <button class="edu-btn" id="currently">Currently learning</button>
+            <button class="edu-btn" id="next">Learning next</button>
+            <button class="edu-btn" id="interested">Interested in learning</button>
+        </div>
+
+        <div class="window-content education-window-content">
+
+                <div id="certification-area" class="education-area certification-area">
+                    <div class="education-item">
+                        <h4><a href="https://www.freecodecamp.org/certification/feladev/responsive-web-design">Responsive Web design</a></h4> 
+                        <p>Freecodecamp</p>
+                        <p>(300hs)</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Javascript Algorithms and Data Structures</h4>
+                        <p>Freecodecamp</p>
+                        <p>(300hs)</p>
+                    </div>
+                    <div class="education-item"> <a href="./resources/diplomas/Certificado Argentina Programa Felicitas Figueroa Fagalde (1).pdf" target= "_blank"><h4>"Se Programar" </h4></a>
+                        <p>Argentina Programa (CESSI)</p>
+                        <p>(Fundamentos, JS, RUBY)</p>
+                    </div>
+                     <div class="education-item"><a href="./resources/diplomas/Certificado Intro al desarrollo web- Google .pdf" target= "_blank"><h4>Introduccion al desarrollo Web </h4></a>
+                        <p>Universidad de Alicante</p>
+                        <p>Google Activate</p>
+                    </div>
+                    <div class="education-item"> <a href="https://platzi.com/p/felicitasfigueroa/" target= "_blank">
+                        <h4>Introduccion a la <br> ingenieria del software</h4></a>
+                        <p>Platzi</p>
+                    </div>
+                    <div class="education-item"><a href="https://platzi.com/p/felicitasfigueroa/" target= "_blank"><h4>Pensamiento Logico</h4></a>
+                        <p>Platzi</p>
+                    </div> 
+                </div>
+                
+                <div id="currently-area" class="education-area currently-area hide">
+                    <h4 class="education-item">React</h4>
+                    <h4 class="education-item">Bootstrap</h4>
+                    <h4 class="education-item">SASS</h4>
+                    <h4 class="education-item">GSAP</h4>
+                </div>
+                <div id="next-area" class="education-area next-area hide">
+                    <div class="education-item"> 
+                        <h4>JAVA</h4> 
+                        <p>Argentina Programa</p>
+                        <p> (Abril)</p>
+                    </div>
+
+                    <div class="education-item">
+                        <h4>SQL</h4>
+                        <p>Argentina Programa</p>
+                        <p> (Abril)</p>
+                    </div>
+
+                    <div class="education-item">
+                        <h4>.NET</h4>
+                        <p>Argentina Programa</p>
+                        <p> (Abril)</p>
+                    </div>
+
+                </div>
+                <div id="interested-area" class="education-area interested-area hide">
+                    <h4 class="education-item">Python</h4>
+                    <h4 class="education-item">Machine learning</h4>
+                    <h4 class="education-item">Creative coding</h4>
+                    <h4 class="education-item">Blockchain</h4>
+                </div> 
+    </section>
+    <!-- skills -->
+    <section class="skills window skills-window hide" draggable="true">
+        <header class="window-header">
+            <h2 class="window-title window-title-skills" >Skills</h2>
+            <button class="close-btn">x</button>
+        </header>
+        <div class="window-content">
+            <figure class="skills-avatar">
+                <img src="./resources/avatar.png" alt="avatar">
+            </figure>
+            <div class="main-skills">
+                
+                <div class="stat-container technologies-stats-container">
+                    <h2 class="stats-category-title">Technologies</h2>
+                <span class="stats technologies-stats">
+                    <h4 class="single-stat-title">Javascript</h4>
+                    <figure class="stats-graphic">
+                        <figure class="graph-fill js"></figure>
+                    </figure>
+                </span>
+                <span class="stats technologies-stats">
+                    <h4 class="single-stat-title">Ruby</h4>
+                    <figure class="stats-graphic">
+                        <figure class="graph-fill ruby"></figure>
+                    </figure>
+                </span>
+                <span class="stats technologies-stats">
+                    <h4 class="single-stat-title">HTML</h4>
+                    <figure class="stats-graphic">
+                        <figure class="graph-fill html"></figure>
+                    </figure>
+                </span>
+                <span class="stats technologies-stats">
+                    <h4 class="single-stat-title">CSS3</h4>
+                    <figure class="stats-graphic">
+                        <figure class="graph-fill css"></figure>
+                    </figure>
+                </span>
+                <span class="stats technologies-stats">
+                    <h4 class="single-stat-title">Git</h4>
+                    <figure class="stats-graphic">
+                        <figure class="graph-fill git"></figure>
+                    </figure>
+                </span>
+            </div>
+            <div class="stat-container tools-stats-container">
+                <h2 class="stats-category-title">Tools</h2>
+                <span class=" stats tool-stats">
+                    <h4 class="single-stat-title">GitHub</h4>
+                    <figure class="stats-graphic">
+                        <figure class="graph-fill github"></figure>
+                    </figure>
+                </span>
+                <span class="stats tools-stats">
+                    <h4 class="single-stat-title">Visual Studio Code</h4>
+                    <figure class="stats-graphic">
+                        <figure class="graph-fill vsc"></figure>
+                    </figure>
+                </span>
+                <span class="stats tools-stats">
+                    <h4 class="single-stat-title">Photoshop</h4>
+                    <figure class="stats-graphic">
+                        <figure class="graph-fill ps"></figure>
+                    </figure>
+                </span>
+                <span class="stats tools-stats">
+                    <h4 class="single-stat-title">Adobe Premiere Cc</h4>
+                    <figure class="stats-graphic">
+                        <figure class="graph-fill cc"></figure>
+                    </figure>
+                </span>
+                <span class="stats tools-stats">
+                    <h4 class="single-stat-title">After Effects</h4>
+                    <figure class="stats-graphic">
+                        <figure class="graph-fill ae"></figure>
+                    </figure>
+                </span>
+            </div>
+            </div>
+        </div>
+        <footer class="skills-footer">
+            <span class="flags">
+            <img class="flag-footer" src="./resources/reino-unido.png" alt="uk-flag" srcset="">
+            <img class="flag-footer" src="./resources/espana.png" alt="" srcset="">
+        </footer>
+    </section>
+
+</main>
+<!-- end -->
+<script src="./script.js"></script>
+</body>
+</html>
