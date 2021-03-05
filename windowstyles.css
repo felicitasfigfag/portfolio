@@ -223,7 +223,7 @@ a{
     padding: 0;
     height: 100%;
 }
-.skills-window .window-header{
+.skills-window .window-header {
     background-color: black;
     color: var(--yellow-color);
     display: flex;
@@ -231,12 +231,12 @@ a{
     justify-items: center;
     align-items: center;
 }
-.window-title-skills{
+.window-title-skills, .window-title-projects{
     font-size: 25px;
     font-family: secondFont;
     margin: 10px;
 }
-.skills-window button{
+.skills-window button, .black-btn{
     background-color: black;
     color: var(--yellow-color);
     font-size: 25px;
@@ -339,20 +339,79 @@ a{
     margin-bottom: 20px;
     background-color: black;
 }
-/* INTERESTS */
-.interest-window{
-    width: 300px;
+/* PROJECTS */
+.projects-window{
+    width: 800px;
     height: 500px;
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 15%;
-    margin-left: 40%;
-    background-color: unset;
-    border: unset;
-    box-shadow: none;
+    margin-left: 300px;
+    margin-bottom: 180px;
+    background-color: black;
+    border-radius: 10%;
+    border: 4px rgb(131, 2, 131) solid;
+}
+.pr-description p{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 12px; 
+    color:whitesmoke
+}
+.projects-window .window-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: mainFont;
+    text-align: center;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.window-title-projects{
+    color: rgba(184,9,184,1);
+}
+.pr-img{
+    width: 250px;
+    height: 300px;
+    border: 1px black solid;
+    border-radius: 10%;
+    -webkit-box-shadow: 0px 0px 35px -18px rgba(184,9,184,1);
+    -moz-box-shadow: 0px 0px 35px -18px rgba(184,9,184,1);
+    box-shadow: 0px 0px 35px -18px rgba(184,9,184,1);
+    animation: projects 3s ease infinite;
+}
+.projects-header button{
+    color: rgba(184,9,184,1);
 }
 
+@keyframes projects{
+    0%{
+        -webkit-box-shadow: 0px 0px 35px -18px rgba(184,9,184,1);
+        -moz-box-shadow: 0px 0px 35px -18px rgba(184,9,184,1);
+        box-shadow: 0px 0px 35px -18px rgba(184,9,184,1);
+    }
+    50%{
+        
+        -webkit-box-shadow: 0px 0px 50px -18px rgb(202, 11, 202);
+        -moz-box-shadow: 0px 0px 50px -18px rgb(202, 11, 202);
+        box-shadow: 0px 0px 50px -18px rgb(202, 11, 202);
+    }
+    100%{
+        -webkit-box-shadow: 0px 0px 35px -18px rgba(184,9,184,1);
+        -moz-box-shadow: 0px 0px 35px -18px rgba(184,9,184,1);
+        box-shadow: 0px 0px 35px -18px rgba(184,9,184,1);
+    }
+}
+
+
+.projects-header{
+    background-color: black;
+    color: var(--yellow-color);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+}
 /* DYNAMIC */
 .hide{
     visibility: hidden;
