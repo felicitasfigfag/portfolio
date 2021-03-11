@@ -2,32 +2,51 @@ const aboutIcon = document.querySelector(".about-window");
 const closeBtns = document.querySelectorAll(".close-btn");
 const folders = document.querySelectorAll(".folder");
 const ventanas = document.querySelectorAll(".window");
-const educationBtns = document.querySelectorAll(".edu-btn")
-const educationAreas = document.querySelectorAll(".education-area")
+const educationBtns = document.querySelectorAll(".edu-btn");
+const educationAreas = document.querySelectorAll(".education-area");
+const projects = document.querySelectorAll(".project");
+const projectBtn = document.querySelectorAll(".nav-obj");
+const marquee = document.getElementById("project-description");
+const footerBtn = document.getElementById("footer-btn");
+
 
 //CLOSE BUTTONS 
  closeBtns.forEach(function (btn){
      btn.addEventListener("click", function(e) {
      let currentParent= e.currentTarget.parentElement.parentElement;
      currentParent.classList.toggle("hide")
-     console.log(currentParent)
+     currentParent.classList.remove("top")
+
      });
- });
- 
+    });
+    
+    //Select folders
+    
+    $('.window').click(function toFront(){   
+        $('.window').css('zIndex',2);
+        $(this).css('zIndex',900);    
+    });
+
 //OPEN FOLDERS
+let prevSelected = null;
 
 folders.forEach(function (folder){
-    const btn = folder.querySelector(".folder-btn");
-    btn.addEventListener("click", function(){
+    let btn = folder.querySelector(".folder-btn");
+    btn.addEventListener("dblclick", function(){
         let selectedClass= (folder.id +"-window");
-        for (let i of ventanas){
+        for (let i of ventanas) {
+            i.style.zIndex = 2; 
             if (i.classList.contains(selectedClass)){
-                i.classList.remove("hide")
+                i.classList.remove("hide");
+                i.style.zIndex = 999;
+                prevSelected = i
+                
             }
+            //return selected;
         }
+        prevSelected.style.zIndex = 100;
     })
 })
-
 //education
 // DESPLEGABLE 
 educationBtns.forEach(function (btn){
@@ -45,13 +64,47 @@ btn.addEventListener("click",function(){
     })
 })
 
+//DISPLAY PROJECTS
+
+let projectDescriptionOne = "3D CSS interactive cube";
+let projectDescriptionTwo= "Restaurant menu with dinamically added data.";
+projectBtn.forEach(function(btn){
+    btn.addEventListener("click", function(){
+        let selectedClass= (btn.id +"-display");
+        projectBtn.forEach(function(item){
+            if(item!== btn){
+                let selectedClass2= (item.id + "-display");
+                let selectedProject2= document.getElementById(selectedClass2);
+                selectedProject2.classList.add("hide")
+                if(selectedProject2.id == "pr2-display"){
+                    marquee.textContent = projectDescriptionOne
+                }
+                else{
+                    marquee.textContent = projectDescriptionTwo
+                }
+            }
+        })
+        for (let i of projects){
+             if (i.classList.contains(selectedClass)){
+                 i.classList.remove("hide")
+            }
+        }
+        })
+})
+
+// DRAGGABLE
+
+$(function() {
+  $( ".draggable" ).draggable();
+} );
+
+//DELETE
+footerBtn.addEventListener("click", function(){
+    alert("This will delete the whole page")
+    confirm("Are you sure you want to delete the page?")
+    document.querySelector(".deleted").classList.remove("hide");
+    document.querySelector(".black-screen").classList.add("black-screen-animation")
+    
+})
 
 
-// vamos a filtrar del array de categorias la que tenga la clase que
-// buscamos. 
-// La ponemos en una variable: categoria seleccionada. 
-// A esa categoria le borramos el hide.
-// Dsp el metodo del word, y comprobamos:
-// categoriaseleccionada.id = item.id? if not:
-// agregar clase hide a categorias.getelementbyid(item.id)
-//
