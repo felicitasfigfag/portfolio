@@ -299,10 +299,10 @@ a{
     margin: 0;
 }
 .js{
-    width: 90%;
+    width: 80%;
 }
 .ruby{
-    width: 80%;
+    width: 70%;
 }
 .html{
     width: 100%;
@@ -311,22 +311,22 @@ a{
     width: 100%;
 }
 .git{
-    width: 70%;
+    width: 60%;
 }
 .github{
-    width: 80%;
+    width: 70%;
 }
 .vsc{
     width: 100%;
 }
 .ps{
-    width: 90%
+    width: 70%
 }
 .cc{
-    width: 100%
+    width: 60%
 }
 .ae{
-    width: 80%
+    width: 60%
 }
 .skills-avatar{
     width: 30%;
@@ -380,7 +380,7 @@ a{
     font-family: mainFont;
     text-align: center;
     padding: 0;
-    background-color: none;
+    background-color: var(--yellow-light);
 }
 .pr-nav{
     grid-column: 2/3;
