@@ -4,8 +4,12 @@
     --pink-color: #F4B9B2;
     --yellow-color: #FFE66D;
     --green-color: #3DDC97;
+    --cyber-color: rgb(77, 153, 0);
   }
-
+  @font-face {
+    font-family: bootFont;
+    src: url(./fonts/perfect_dos_vga_437/Perfect\ DOS\ VGA\ 437\ Win.ttf)
+  }
   @font-face {
     font-family: mainFont;
     src: url(./fonts/chicago/ChicagoFLF.ttf);
@@ -24,20 +28,24 @@
   }
 
   body{
-    /* background-image: url(./resources/fondos/pink.gif); */
+    /* background-image: url(./resources/fondos/fondo\ rosita-1.png);  */
+    background-position: center;
+    background-size: cover;
     background-color: var(--main-bg-color);
     color:var(--main-text-color);
     padding: 0;
     margin: 0;
     font-family: mainFont;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: all ease 0.5s;
   }
-  .container{
-    position: relative;
-  }
+
   /* NAV BAR */
   .navbar{
     background-color: var(--yellow-color);
     margin: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: 3(20% 60% 20%);
     
@@ -79,6 +87,13 @@
  /* center */
 
 /* FOLDERS */
+aside{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 figure{
     color: var(--main-text-color);
     font-family: mainFont;
@@ -88,22 +103,27 @@ figure{
 .folder-container{
     width: 25%;
     display: grid;
-    grid-template-columns: repeat(3, 25%);
-    grid-template-rows: repeat(3, 25%);
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 50%);
     position: absolute;
-    margin-top: 15%;
+    margin-top: 18%;
     margin-left: 10px;
     overflow: hidden;
 }
 figure button{
-    background-color: unset;
+    background: unset;
     border:unset;
     cursor: pointer;
+    width: fit-content;
+    height: fit-content;
 }
 
 /* Arriba | Derecha | Abajo | Izquierda */
 .folder{
-   margin: 30px 20px  20px 10px;
+   margin: 20px 20px  20px 10px;
+}
+.folder-btn p{
+  margin: 0;
 }
 
 .row-1{
@@ -116,6 +136,131 @@ figure button{
     grid-row: 3/4;
 }
 .folder img{
-    width: 100%;
+    width: 50px;
 }
 
+/* FOOTER */
+.footer-btn{
+    width: 50px;
+    height: 50px;
+    background: unset;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    border: unset;
+    cursor: pointer;
+}
+.footer-btn img{
+  width: 50px;
+}
+.deleted{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100vh;
+  width:100vw;
+  background: black;
+  z-index: 99999;
+
+}
+.black-screen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: bootFont;
+  font-size: 16px;
+  height: inherit;
+  width: inherit;
+  background: #1013a0;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 0.125em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.black-screen-animation{
+  clip: rect(900px,0,0);
+  animation: noise-anim 1s  linear ;
+}
+.deleted h1{
+  background:#d8d7e7;
+  color:  #1013a0;
+  letter-spacing: normal;
+  padding: 1px;
+  
+
+}
+
+.deleted-text{
+  opacity: 100%;
+  animation-duration: 0.01s;
+  /* animation-name: textflicker; */
+  animation-iteration-count: infinite;
+  transition: ease-in;
+  animation-direction: alternate; 
+  font-size: 16px;
+  /* text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;  */
+}
+ 
+/* @keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}  */
+@-webkit-keyframes noise-anim{
+  0%{clip:rect(89px,9999px,100px,0)}
+  5%{clip:rect(4px,9999px,62px,0)}
+  10%{clip:rect(43px,9999px,16px,0)}
+  15%{clip:rect(2px,9999px,68px,0)}
+  20%{clip:rect(12px,9999px,6px,0)}
+  25%{clip:rect(89px,9999px,25px,0)}
+  30%{clip:rect(15px,9999px,38px,0)}
+  35%{clip:rect(57px,9999px,97px,0)}
+  40%{clip:rect(24px,9999px,72px,0)}
+  45%{clip:rect(81px,9999px,3px,0)}
+  50%{clip:rect(93px,9999px,26px,0)}
+  55%{clip:rect(68px,9999px,85px,0)}
+  60%{clip:rect(43px,9999px,28px,0)}
+  65%{clip:rect(44px,9999px,11px,0)}
+  70%{clip:rect(17px,9999px,33px,0)}
+  75%{clip:rect(74px,9999px,66px,0)}
+  80%{clip:rect(100px,9999px,4px,0)}
+  85%{clip:rect(92px,9999px,31px,0)}
+  90%{clip:rect(93px,9999px,98px,0)}
+  95%{clip:rect(23px,9999px,77px,0)}
+  100%{clip:rect(92px,9999px,8px,0)}
+  }
+  
+  @keyframes noise-anim{
+  0%{clip:rect(89px,9999px,100px,0)}
+  5%{clip:rect(4px,9999px,62px,0)}
+  10%{clip:rect(43px,9999px,16px,0)}
+  15%{clip:rect(2px,9999px,68px,0)}
+  20%{clip:rect(12px,9999px,6px,0)}
+  25%{clip:rect(89px,9999px,25px,0)}
+  30%{clip:rect(15px,9999px,38px,0)}
+  35%{clip:rect(57px,9999px,97px,0)}
+  40%{clip:rect(24px,9999px,72px,0)}
+  45%{clip:rect(81px,9999px,3px,0)}
+  50%{clip:rect(93px,9999px,26px,0)}
+  55%{clip:rect(68px,9999px,85px,0)}
+  60%{clip:rect(43px,9999px,28px,0)}
+  65%{clip:rect(44px,9999px,11px,0)}
+  70%{clip:rect(17px,9999px,33px,0)}
+  75%{clip:rect(74px,9999px,66px,0)}
+  80%{clip:rect(100px,9999px,4px,0)}
+  85%{clip:rect(92px,9999px,31px,0)}
+  90%{clip:rect(93px,9999px,98px,0)}
+  95%{clip:rect(23px,9999px,77px,0)}
+  100%{clip:rect(92px,9999px,8px,0)}
+  }
+
+  /* media queries */
