@@ -6,74 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./windowstyles.css">
-    <title>Feli Figueroa</title>
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <title>Felicitas Figueroa</title>
 </head>
 <body>
-    <!-- nav -->
+    <!-- deleted -->
+     <div class="deleted hide">
+        <span class="black-screen">
+            <h1 class="deleted-text"> An error has ocurred</h1>
+            <p class="deleted-text">An error has been detected on your computer.</p>
+            <p class="deleted-text">Call me, I can fix it. 
+                <br> +54 3815943811</p>
+        </span>    
+    </div>  
+    <!--                        NAV         -->
     <nav class="navbar">
         <ul class="ul1">
-            <li><button class="nav-btn">FELICITAS FIGUEROA</button></li>
+            <li><a href="mailto:felifigueroaf@gmail.com" target="_blank"><button class="nav-btn">FELICITAS FIGUEROA</button></a></li>
         </ul>
         <ul class="ul2">
             <li><button class="nav-btn">
-                <img class="nav-icon" src="https://img.icons8.com/ios/50/000000/room-sound.png"/>
+                <a href="./index.html"><img class="nav-icon" src="./resources/reino-unido.png"/></a>
             </button></li>
             <li><button class="nav-btn">
-                <img class="nav-icon" src="https://img.icons8.com/material-outlined/24/000000/full-screen--v1.png"/>
+                <a href="./indexspa.html"><img class="nav-icon" src="./resources/espana.png"/></a>
             </button></li>
+            
             <li><button class="nav-btn">Sun 8 Oct 1995</button></li>
         </ul>
     </nav>
-    <main class="container">
-        <!-- folders -->
+    
+             <!--                      ASIDE        -->
     <aside class="folder-container">
-        <figure id="video" class="folder video-icon row-1">
-            <button class="folder-btn">
-                <img src="https://img.icons8.com/plasticine/100/000000/film-reel.png"/>
-                Videos
-            </button>
-        </figure>
-        <figure id="contact"class="folder contact-icon row-3">
-            <button class="folder-btn">
-                <img src="https://img.icons8.com/plasticine/100/000000/chat--v1.png"/>
-            Contact
-        </button>
-        </figure>
-        
         <figure id="about" class="folder about-icon row-1">
             <button class="folder-btn">
-                <img src="https://img.icons8.com/plasticine/100/000000/user-female.png"/>
-            About
+                <img src="https://img.icons8.com/plasticine/100/000000/user-female-circle.png"/>
+            <p>About</p>
         </button>
         </figure>
+        <figure id="skills" class="folder skills-icon row-1">
+            <button class="folder-btn">
+                <img src="https://img.icons8.com/plasticine/100/000000/design--v1.png"/>
+          <p> Skills</p>
+        </button>
+        </figure>
+        <!-- <figure id="video" class="folder video-icon row-1">
+             <button class="folder-btn">
+                <img src="https://img.icons8.com/plasticine/100/000000/film-reel.png"/>
+                Videos
+            </button> 
+        </figure> -->
+        <figure id="contact"class="folder contact-icon row-2">
+            <button class="folder-btn">
+                <img src="https://img.icons8.com/plasticine/100/000000/chat--v1.png"/>
+            <p>Contact</p>
+        </button>
+        </figure>
+
         <figure id="education" class="folder education-icon row-2">
             <button class="folder-btn">
-                <img src="https://img.icons8.com/plasticine/100/000000/document.png"/>
-            Education
+                <img src="https://img.icons8.com/plasticine/100/000000/graduation-cap.png"/>
+            <p>Education</p>
         </button>
         </figure>
         <figure id="projects" class="folder projects-icon row-1">
             <button class="folder-btn">
                 <img src="https://img.icons8.com/plasticine/100/000000/opened-folder.png"/>
-            Projects
+            <p>Projects</p>
         </button>
         </figure>
-        <figure id="skills" class="folder skills-icon row-2">
+
+        </figure>
+        <figure id="text" class="folder text-icon row-2">
             <button class="folder-btn">
-                <img src="https://img.icons8.com/plasticine/100/000000/design--v1.png"/>
-            Skills
-        </button>
-        </figure>
-        </figure>
-        <figure id="music"class="folder music-icon row-2">
-            <button class="folder-btn">
-                <img src="https://img.icons8.com/plasticine/100/000000/lo-fi.png"/>
-            Music
-        </button>
-        </figure>
+                <img src="https://img.icons8.com/plasticine/100/000000/rules.png"/>
+            <p>.txt</p>
+            </button>
+        </figure> 
     </aside>
     <!-- video -->
-    <section class="window video-window hide" draggable="true">  
+    <section class="window video-window hide draggable" >  
         <!-- sacar hide dsp -->
         <header class="window-header">
             <h2 class="window-title">Video Player</h2>
@@ -84,25 +96,28 @@
         </div>
     </section>
     <!-- about -->
-    <section class="window about-window hide" draggable="true">
-        <!-- sacar hide dsp -->
+    <section class="window about-window  hide draggable" >
+        
         <header class="window-header">
             <h2 class="window-title">About</h2>
                 <button class="close-btn">x</button>
         </header>
         <div class="window-content">
+            <img src="./resources/bolitas.gif" alt="gif" class="about-gif">
+            <span class="about-text">
             <p>Hey!</p>
-            <p>I'm Felicitas Figueroa Fagalde,</p>
+            <h4>I'm Felicitas Figueroa Fagalde,</h4>
             <p>a 25 year old Front-End Developer</p>
             <p>from Tucumán, Argentina.</p>
             <p>Get to now more about me and my work by </p>
             <p>opening the different folders.</p>
             <p>:)</p>
+        </span>
         </div>
         <figure class="note-footer"></figure>
     </section>
     <!-- education -->
-    <section class="window education-window hide" draggable="true">
+    <section class="window education-window hide draggable" >
         <header class="window-header">
             <h2 class="window-title">Education</h2>
                 <button class="close-btn">x</button>
@@ -146,8 +161,8 @@
                 
                 <div id="currently-area" class="education-area currently-area hide">
                     <h4 class="education-item">React</h4>
+                    <h4 class="education-item">jQuery</h4>
                     <h4 class="education-item">Bootstrap</h4>
-                    <h4 class="education-item">SASS</h4>
                     <h4 class="education-item">GSAP</h4>
                 </div>
                 <div id="next-area" class="education-area next-area hide">
@@ -178,7 +193,7 @@
                 </div> 
     </section>
     <!-- skills -->
-    <section class="skills window skills-window hide" draggable="true">
+    <section class="skills window skills-window hide draggable" >
         <header class="window-header">
             <h2 class="window-title window-title-skills" >Skills</h2>
             <button class="close-btn">x</button>
@@ -258,40 +273,100 @@
             </div>
         </div>
         <footer class="skills-footer">
-            <span class="flags">
             <img class="flag-footer" src="./resources/reino-unido.png" alt="uk-flag" srcset="">
             <img class="flag-footer" src="./resources/espana.png" alt="" srcset="">
         </footer>
     </section>
     <!-- projects -->
-    <section class="projects window projects-window" draggable="true">
+    <section class="projects window projects-window  draggable" >
         <header class="window-header projects-header">
             <h2 class="window-title window-title-projects" >Projects</h2>
             <button class="close-btn black-btn">x</button>
         </header>
         <div class="window-content">
-            <div class="pr1">
-                <a href="#">
-                    <img src="./resources/project-1-small.png" class="pr-img pr1-img"  alt="project one image">
-                <span class="pr-description">
-                    <h2>Cubito</h2>
-                    <p>3D css interactive cube</p>
+            <nav class="pr-nav">
+                <div class="nav-top">
+                    <h4>Projects</h4>
+                </div>
+                <span id= "pr1" class="pr1-nav nav-obj">
+                    <h4 class="pr1-nav-title">Cubito</h4>
+                    <p>Js, HTML CSS</p>
                 </span>
-                </a>
-            </div>
-            <div class="pr2">
-                <a href="#">
-                    <img class="pr-img pr2-img"  src="./resources/project-2-small.png" alt="project two image">
-                <span class="pr-description">
-                    <h2>Menu</h2>
-                    <p>Restaurant menu with dinamically added data</p>
+                <span id="pr2" class="pr2-nav nav-obj">
+                    <h4 class="pr2-nav-title">Menu</h4>
+                    <p>Js, HTML CSS</p>
                 </span>
-                </a>
+            </nav>
+            <div class="pr-display">
+                <span id="pr1-display" class="pr1-display project">
+                    <a href="#"> 
+                         <!-- <img src="./resources/cubito large.png" class="pr-img pr1-img"  alt="project one image">  -->
+                        <!-- <img src="./resources/project-1-small.png" class="pr-img pr1-img pr-img-small" alt=""> -->
+                    </a>
+                </span>
+                <span id="pr2-display" class="pr2-display project hide">
+                    <a href="#">
+                        <!-- <img class="pr-img pr2-img"  src="./resources/menu large.png" alt="project two image"> -->
+                        <!-- <img src="./resources/project-1-small.png" class="pr-img pr1-img pr-img-small" alt=""> -->
+                    </a> 
+                </span>
             </div>
+            <footer class="pr-footer">
+               <marquee id="project-description" behavior="styles" direction="right">3D CSS interactive cube</marquee>
+            </footer>
         </div>
     </section>
-</main>
+    <!-- contact -->
+    <section class="contact window contact-window draggable hide" >
+        <header class="window-header contact-header">
+            <h2 class="window-title window-title-contact" >Contact me!</h2>
+            <button class="close-btn black-btn">x</button>
+        </header>
+        <div class="window-content">
+            
+                <a href="https://www.linkedin.com/in/felicitas-figueroa-fagalde-a223901b7/" target="_blank">
+                    <img class="social-logo" src="https://img.icons8.com/plasticine/100/000000/linkedin.png"/>
+                </a>
+                <a href="https://github.com/felicitasfigfag" target="_blank">
+                    <img class="social-logo" src="https://img.icons8.com/plasticine/100/000000/github.png"/>
+                </a>
+                <a href="mailto:felifigueroaf@gmail.com" target="_blank">
+                    <img class="social-logo" src="https://img.icons8.com/plasticine/100/000000/gmail.png"/>
+                </a>
+                <a href="https://www.instagram.com/felacoder/" target="_blank">
+                    <img class="social-logo" src="https://img.icons8.com/plasticine/100/000000/instagram.png"/>
+                </a>
+            
+        </div>
+    </section>
+    <!-- text -->
+    <section class="text window text-window draggable hide" >
+        <header class="window-header text-header">
+            <h2 class="window-title window-title-text" >portfolio.text</h2>
+            <button class="close-btn black-btn">x</button>
+        </header>
+        <div class="window-content">
+            <p>This website was built almost entirely in vainilla CSS and JS as 
+                a practice and display of my habilities using this technologies only. <br> By the end 
+                some jQuery was implemented.
+                Icons are from <a href="https://iconos8.es/">Iconos8</a>. <br>
+                Thank you for stopping by.
+            </p>
+        </div>
+    </section>
+    <div id="page-footer">
+        <button id="footer-btn" class="footer-btn">
+            <img src="https://img.icons8.com/plasticine/100/000000/delete.png"/>
+        </button>
+    </div>
+<!-- </main> -->
+
 <!-- end -->
+<!-- jQuery link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- jQuery UI link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- script -->
 <script src="./script.js"></script>
 </body>
 </html>
