@@ -97,10 +97,8 @@ body{
   /* projects */
   .projects-window{
       width: 80%;
-      background: none;
   }
   .projects-window .window-content{
-      background: none;
       display: grid;
       grid-template-columns: 70% 30%;
   }
