@@ -368,7 +368,7 @@ a{
     margin-left: 300px;
     margin-bottom: 180px;
     z-index: 1;
-    background: none;
+    background: var(--yellow-light);
 }
 
 .projects-window .window-content{
