@@ -32,7 +32,7 @@ let prevSelected = null;
 
 folders.forEach(function (folder){
     let btn = folder.querySelector(".folder-btn");
-    btn.addEventListener("dblclick", function(){
+    btn.addEventListener("click", function(){
         let selectedClass= (folder.id +"-window");
         for (let i of ventanas) {
             i.style.zIndex = 2; 
