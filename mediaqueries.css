@@ -8,7 +8,7 @@ body{
   }
   /* TABLET */
   /* funciona con ipad */
- @media screen and (min-width: 480px) and (max-width: 768px){
+ @media screen and (max-width: 768px){
   body{
     background-image: unset;
     margin: 0;
@@ -23,7 +23,6 @@ body{
   }
   /* nav */
   .navbar{
-      width: 100%;
       margin: 0;
       padding: 0;
   }
@@ -130,8 +129,252 @@ body{
        width: 40%;
    }
 } 
+/* ------------------------------- */
+/* big tablets */
+/* ------------------------------- */
+@media screen and (min-width: 1024px) and (min-height: 1366px){
 
-/* SMART PHONE */
+    /* NAV */
+.navbar{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between ;
+    text-align: center;
+
+}
+.nav-btn{
+    font-size: 30px;
+    box-sizing: border-box;
+}
+.ul2{
+    grid-column: 2/3;
+    font-size: 15px;
+}
+/* FOLDERS */
+.folder-container{
+    width: 45%;
+    margin-bottom: -200px;
+}
+figure p{
+    font-size: 25px;
+}
+.folder-btn img{
+    width: 90px;
+}
+.footer-btn img{
+    width: 90px;
+    margin-bottom: -180px;
+    margin-right: -300px;
+}
+/* WINDOW */
+ .window-title{
+    font-size: 25px;
+}
+.close-btn{
+    font-size: 20px;
+}/*
+h4{
+    font-size: 30px;
+} 
+.window-content{
+    font-size: 25px;
+}*/
+/* ABOUT */
+.about-window h4{
+    font-size: 28px;
+}
+.about-window .window-content{
+    font-size: 25px;
+}
+/* EDUCATION */
+.education-window{
+    width: 80%;
+    height: 60%;
+}
+.edu-btn{
+    height: 100%;
+    font-size: 25px;
+}
+.edu-btn h4{
+    font-size: 15px;
+}
+.education-window p{
+    font-size: 20px;
+}
+.education-window h4{
+    font-size: 25px;
+    
+}
+.education-item{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+
+}
+.education-window p{
+    padding-left: 100px;
+    font-size: 22px;
+}
+/* ---------------------- */
+/*           projects      */
+/* ----------------------- */
+  /* projects */
+  .projects-window{
+    width: 70%;
+    height: 50%;
+}
+.projects-window .window-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.pr-display{
+    grid-column: 1/2;
+    background: none;
+}
+.nav-pr{
+    grid-column: 2/3;
+}
+.nav-top h4{
+    font-size: 22px
+}
+.projects-window .window-content{
+    width: 100%;
+    height: 100%
+}
+.pr1-img, .pr2-img{
+    visibility: hidden;
+}
+#pr1-display{
+     width: 100%;
+     background-image: url(./resources/project-1-small.png);
+     background-size: cover;
+}
+ #pr2-display{
+      background-image: url(./resources/project-2-small.png);
+      background-size: cover;
+      width: 100%;
+}
+.nav-obj h4{
+    font-size: 18px;
+}
+/* ------------------- */
+/* SKILLS */
+/* ------------------- */
+.skills-window{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 200px;
+}
+.stats-category-title{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.single-stat-title{
+    font-size: 18px;
+}
+.skills-avatar{
+    align-self: center;
+}
+.stats-graphic{
+    margin-bottom: 50px;
+    width: 200px;
+    margin-right: 50px;
+}
+/* ---------------------- */
+/* TEXT */
+/* ---------------------- */
+.text-window p{
+    font-size: 25px;
+}
+.text-window{
+    width: 40%;
+    margin-top: 100px;
+    margin-left:100px;
+}
+}
+/* -------------------------------- */
+/* SMART PHONES */
+/* -------------------------------- */
 @media screen and (max-width: 480px){
+  
+    .window-title{
+        font-size: 18px;
+    }
+    .window-content{
+        font-size: 20px;
+    }
+    /* folder */
+    .folder-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height:fit-content;
 
+    }
+    .folder img{
+        width: 60px;
+
+    }
+    .folder{
+        margin-bottom: 80px;
+    }
+    .footer-btn{
+        margin-bottom: -380px;
+        margin-right: -200px;
+    }
+    /* nav */
+    .date{
+        visibility: hidden;
+    }
+    .navbar{
+        height: 5%;
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    .nav-btn{
+        font-size: 20px;
+    }
+    .lang{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 10px;
+    }
+    .spa{
+        margin-right: 40px;
+    }
+    /* about */
+    .about-window h4{
+        font-size: 18px;
+    }
+    .about-window{
+        width: 90%;
+    }
+    /* skills */
+    .skills-window{
+        width: 120%;
+        margin-top: 100px;
+    }
+    .stats-category-title{
+        font-size: 18px;
+    }
+    .single-stat-title{
+        font-size:15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* projects */
+    .projects-window{
+        width: 150%;
+        height: 500px;
+        margin-right: 30px;
+    }
+    .nav-obj h4{
+        font-size: 18px;
+    }
+    .text-window{
+        width: 100%;
+    }
 }
