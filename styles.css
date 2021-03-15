@@ -1,5 +1,6 @@
 html{
   height: 100%;
+  width: 100%
 }
 
 :root {
@@ -32,9 +33,9 @@ html{
   }
 
   body{
-    /* background-image: url(./resources/fondos/fondo\ rosita-1.png);  */
+    background-image: url(./resources/fondos/squares.jpg);
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
     background-color: var(--main-bg-color);
     color:var(--main-text-color);
     padding: 0;
@@ -149,6 +150,10 @@ figure button{
 }
 
 /* FOOTER */
+.page-footer{
+  width: 100%;
+  height: 100%;
+}
 .footer-btn{
     width: 50px;
     height: 50px;
@@ -167,8 +172,8 @@ figure button{
   position: absolute;
   top:0;
   left: 0;
-  height: 100vh;
-  width:100vw;
+  width: 100%;
+  height: 100%;
   background: black;
   z-index: 99999;
 
@@ -177,6 +182,8 @@ figure button{
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   font-family: bootFont;
   font-size: 16px;
   height: inherit;
