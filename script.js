@@ -10,21 +10,21 @@ const marquee = document.getElementById("project-description");
 const footerBtn = document.getElementById("footer-btn");
 
 
-//CLOSE BUTTONS 
- closeBtns.forEach(function (btn){
-     btn.addEventListener("click", function(e) {
-     let currentParent= e.currentTarget.parentElement.parentElement;
-     currentParent.classList.toggle("hide")
-     currentParent.classList.remove("top")
+//CLOSE BUTTONS
+closeBtns.forEach(function (btn){
+    btn.addEventListener("click", function(e) {
+    let currentParent= e.currentTarget.parentElement.parentElement;
+    currentParent.classList.toggle("hide")
+    currentParent.classList.remove("top")
 
-     });
     });
-    
+   });
+
     //Select folders
-    
-    $('.window').click(function toFront(){   
+
+    $('.window').click(function toFront(){
         $('.window').css('zIndex',2);
-        $(this).css('zIndex',900);    
+        $(this).css('zIndex',900);
     });
 
 //OPEN FOLDERS
@@ -35,12 +35,12 @@ folders.forEach(function (folder){
     btn.addEventListener("click", function(){
         let selectedClass= (folder.id +"-window");
         for (let i of ventanas) {
-            i.style.zIndex = 2; 
+            i.style.zIndex = 2;
             if (i.classList.contains(selectedClass)){
                 i.classList.remove("hide");
                 i.style.zIndex = 999;
                 prevSelected = i
-                
+
             }
             //return selected;
         }
@@ -48,7 +48,7 @@ folders.forEach(function (folder){
     })
 })
 //education
-// DESPLEGABLE 
+// DESPLEGABLE
 educationBtns.forEach(function (btn){
 btn.addEventListener("click",function(){
     let selectedClass= (btn.id + "-area");
@@ -104,7 +104,7 @@ footerBtn.addEventListener("click", function(){
     confirm("Are you sure you want to delete the page?")
     document.querySelector(".deleted").classList.remove("hide");
     document.querySelector(".black-screen").classList.add("black-screen-animation")
-    
+
 })
 
 
