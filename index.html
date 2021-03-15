@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="https://img.icons8.com/plasticine/100/000000/user-female-circle.png">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./windowstyles.css">
     <link rel="stylesheet" href="./mediaqueries.css">
@@ -84,17 +85,7 @@
             </button>
         </figure> 
     </aside>
-    <!-- video -->
-    <section class="window video-window hide draggable" >  
-        <!-- sacar hide dsp -->
-        <header class="window-header">
-            <h2 class="window-title">Video Player</h2>
-                <button class="close-btn">x</button>
-        </header>
-        <div class="video-container">
-            <video class="video"src="./resources/vhs-short.mp4" width="760px" height="400px" controls>Vhs1</video>
-        </div>
-    </section>
+
     <!-- about -->
     <section class="window about-window  hide draggable" >
         
@@ -278,7 +269,7 @@
         </footer>
     </section>
     <!-- projects -->
-    <section class="projects window projects-window  draggable" >
+    <section class="projects window projects-window hide draggable" >
         <header class="window-header projects-header">
             <h2 class="window-title window-title-projects" >Projects</h2>
             <button class="close-btn black-btn">x</button>
@@ -298,18 +289,18 @@
                 </span>
             </nav>
             <div class="pr-display">
+                <a href="https://felicitasfigfag.github.io/cubito/" target="_blank"> 
                 <span id="pr1-display" class="pr1-display project">
-                    <a href="#"> 
                          <!-- <img src="./resources/cubito large.png" class="pr-img pr1-img"  alt="project one image">  -->
                         <!-- <img src="./resources/project-1-small.png" class="pr-img pr1-img pr-img-small" alt=""> -->
-                    </a>
-                </span>
+                    </span>
+                </a>
+                <a href="https://felicitasfigfag.github.io/menu/" target="_blank">
                 <span id="pr2-display" class="pr2-display project hide">
-                    <a href="#">
                         <!-- <img class="pr-img pr2-img"  src="./resources/menu large.png" alt="project two image"> -->
                         <!-- <img src="./resources/project-1-small.png" class="pr-img pr1-img pr-img-small" alt=""> -->
-                    </a> 
-                </span>
+                    </span>
+                </a> 
             </div>
             <footer class="pr-footer">
                <marquee id="project-description" behavior="styles" direction="right">3D CSS interactive cube</marquee>
