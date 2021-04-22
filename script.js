@@ -68,20 +68,26 @@ btn.addEventListener("click",function(){
 
 let projectDescriptionOne = "3D CSS interactive cube";
 let projectDescriptionTwo= "Restaurant menu with dinamically added data.";
+let projectDescriptionThree = "Wordpress ONG donation site linked with Mercado Pago"
 projectBtn.forEach(function(btn){
     btn.addEventListener("click", function(){
         let selectedClass= (btn.id +"-display");
+        let selectedProject = document.getElementById(selectedClass)
+        if(selectedProject.id == "pr2-display"){
+            marquee.textContent = projectDescriptionOne
+        }
+        if(selectedProject.id == "pr3-display"){
+            marquee.textContent = projectDescriptionThree
+        }
+        else{
+            marquee.textContent = projectDescriptionTwo
+        }
         projectBtn.forEach(function(item){
             if(item!== btn){
                 let selectedClass2= (item.id + "-display");
                 let selectedProject2= document.getElementById(selectedClass2);
                 selectedProject2.classList.add("hide")
-                if(selectedProject2.id == "pr2-display"){
-                    marquee.textContent = projectDescriptionOne
-                }
-                else{
-                    marquee.textContent = projectDescriptionTwo
-                }
+                
             }
         })
         for (let i of projects){
