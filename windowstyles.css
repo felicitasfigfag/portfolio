@@ -219,7 +219,7 @@ a{
     margin-top: 50px;
     margin-left: 50px;
     width: 60%;
-    height: 90%;
+    height: 98%;
     border: 4px solid var(--yellow-color);
     border-radius: 5%;
     z-index: 1;
@@ -284,6 +284,15 @@ a{
     padding: 0;
     margin: 0;
 }
+.react{
+    width: 50%;
+}
+.sql{
+    width: 30%;
+}
+.wordpress{
+    width: 30%;
+}
 .js{
     width: 80%;
 }
@@ -313,9 +322,6 @@ a{
 }
 .ae{
     width: 60%;
-}
-.jQuery{
-    width: 50%;
 }
 .skills-avatar{
     width: 30%;
