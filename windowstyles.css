@@ -457,6 +457,14 @@ a{
     top: 0;
     left: 0;
 }
+.pr3-display{
+    background-image: url(./resources/Orejitas-large.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .pr-footer{
     grid-column: 1/3;
