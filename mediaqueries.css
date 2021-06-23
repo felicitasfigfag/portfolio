@@ -118,15 +118,25 @@ body{
       visibility: hidden;
   }
   #pr1-display{
+    width: 100%;
+    background-image: url(./resources/hero-small.png);
+    background-size: cover;
+}
+  #pr2-display{
        width: 100%;
-       background-image: url(./resources/project-1-small.png);
+       background-image: url(./resources/cubito-small.png);
        background-size: cover;
   }
-   #pr2-display{
-        background-image: url(./resources/project-2-small.png);
+   #pr3-display{
+        background-image: url(./resources/menu-small.png);
         background-size: cover;
         width: 100%;
   }
+  #pr4-display{
+    background-image: url(./resources/Orejitas-large.png);
+    background-size: cover;
+    width: 100%;
+}
    /* TEXT */
    .text-window{
        width: 40%;
