@@ -14,6 +14,7 @@
 <body>
     <!-- deleted -->
      <div class="deleted hide">
+         <img src="./general-grande.png" hidden alt="">
         <span class="black-screen">
             <h1 class="deleted-text"> An error has ocurred</h1>
             <p class="deleted-text">An error has been detected on your computer.</p>
@@ -49,15 +50,9 @@
         <figure id="skills" class="folder skills-icon row-1">
             <button class="folder-btn">
                 <img src="https://img.icons8.com/plasticine/100/000000/design--v1.png"/>
-          <p> Skills</p>
+        <p> Skills</p>
         </button>
         </figure>
-        <!-- <figure id="video" class="folder video-icon row-1">
-             <button class="folder-btn">
-                <img src="https://img.icons8.com/plasticine/100/000000/film-reel.png"/>
-                Videos
-            </button> 
-        </figure> -->
         <figure id="contact"class="folder contact-icon row-2">
             <button class="folder-btn">
                 <img src="https://img.icons8.com/plasticine/100/000000/chat--v1.png"/>
@@ -117,7 +112,7 @@
         <div class="education-button-container">
             <button class="edu-btn" id="certification">Certifications</button>
             <button class="edu-btn" id="currently">Currently learning</button>
-            <button class="edu-btn" id="next">Learning next</button>
+            <!-- <button class="edu-btn" id="next">Learning next</button> -->
             <button class="edu-btn" id="interested">Interested in learning</button>
         </div>
 
@@ -142,7 +137,7 @@
                         <p>Argentina Programa (CESSI)</p>
                         <p>(Fundamentos, JS, RUBY)</p>
                     </div>
-                     <div class="education-item"><a href="./resources/diplomas/Certificado Intro al desarrollo web- Google .pdf" target= "_blank"><h4>Introduccion al desarrollo Web </h4></a>
+                    <div class="education-item"><a href="./resources/diplomas/Certificado Intro al desarrollo web- Google .pdf" target= "_blank"><h4>Introduccion al desarrollo Web </h4></a>
                         <p>Universidad de Alicante</p>
                         <p>Google Activate</p>
                     </div>
@@ -156,29 +151,8 @@
                 </div>
                 
                 <div id="currently-area" class="education-area currently-area hide">
-                    <h4 class="education-item">React</h4>
                     <h4 class="education-item">PHP // Laravel (Codo a Codo)</h4>
-                    <h4 class="education-item">Bootstrap (Codo a Codo)</h4>
                 </div>
-                 <div id="next-area" class="education-area next-area hide">
-                    <div class="education-item"> 
-                        <h4>JAVA</h4> 
-                        <p>Argentina Programa</p>
-                        <p> (Abril)</p>
-                    </div>
-
-                    <div class="education-item">
-                        <h4>SQL</h4>
-                        <p>Argentina Programa</p>
-                        <p> (Abril)</p>
-                    </div>
-
-                    <div class="education-item">
-                        <h4>.NET</h4>
-                        <p>Argentina Programa</p>
-                        <p> (Abril)</p>
-                    </div>
-
                 </div>
                 <div id="interested-area" class="education-area interested-area hide">
                     <h4 class="education-item">Python</h4>
@@ -211,12 +185,6 @@
                     <h4 class="single-stat-title">Javascript ES6</h4>
                     <figure class="stats-graphic">
                         <figure class="graph-fill js"></figure>
-                    </figure>
-                </span>
-                <span class="stats technologies-stats">
-                    <h4 class="single-stat-title">Ruby</h4>
-                    <figure class="stats-graphic">
-                        <figure class="graph-fill ruby"></figure>
                     </figure>
                 </span>
                 <span class="stats technologies-stats">
@@ -302,40 +270,43 @@
                     <h4>Projects</h4>
                 </div>
                 <span id= "pr1" class="pr1-nav nav-obj">
-                    <h4 class="pr1-nav-title">Cubito</h4>
-                    <p>Js, HTML CSS</p>
+                    <h4 class="pr1-nav-title">SuperheroApp</h4>
+                    <p>React/Redux app</p>
                 </span>
-                <span id="pr2" class="pr2-nav nav-obj">
-                    <h4 class="pr2-nav-title">Menu</h4>
+                <span id= "pr2" class="pr2-nav nav-obj">
+                    <h4 class="pr2-nav-title">Cubito</h4>
                     <p>Js, HTML CSS</p>
                 </span>
                 <span id="pr3" class="pr3-nav nav-obj">
-                    <h4 class="pr2-nav-title">ONG Site</h4>
+                    <h4 class="pr3-nav-title">Menu</h4>
+                    <p>Js, HTML CSS</p>
+                </span>
+                <span id="pr4" class="pr4-nav nav-obj">
+                    <h4 class="pr4-nav-title">ONG Site</h4>
                     <p>Wordpress</p>
                 </span>
             </nav>
             <div class="pr-display">
+                <a href="https://compassionate-knuth-eb6191.netlify.app/" target="_blank"> 
+                    <span id="pr1-display" class="pr1-display project">
+                    </span>
+                </a>
                 <a href="https://felicitasfigfag.github.io/cubito/" target="_blank"> 
-                <span id="pr1-display" class="pr1-display project">
-                        <!-- <img src="./resources/cubito large.png" class="pr-img pr1-img"  alt="project one image">  -->
-                        <!-- <img src="./resources/project-1-small.png" class="pr-img pr1-img pr-img-small" alt=""> -->
-                </span>
+                    <span id="pr2-display" class="pr2-display project hide">
+                    </span>
                 </a>
                 <a href="https://felicitasfigfag.github.io/menu/" target="_blank">
-                <span id="pr2-display" class="pr2-display project hide">
-                        <!-- <img class="pr-img pr2-img"  src="./resources/menu large.png" alt="project two image"> -->
-                        <!-- <img src="./resources/project-1-small.png" class="pr-img pr1-img pr-img-small" alt=""> -->
-                </span>
+                    <span id="pr3-display" class="pr3-display project hide">
+                    </span>
                 </a> 
                 <a href="https://orejitascallejeras.ga" target="_blank">
-                <span id="pr3-display" class="pr3-display project hide">
-                        <!-- <img class="pr-img pr2-img"  src="./resources/menu large.png" alt="project two image"> -->
-                        <!-- <img src="./resources/project-1-small.png" class="pr-img pr1-img pr-img-small" alt=""> -->
-                </span>
+                    <span id="pr4-display" class="pr4-display project hide">
+                    </span>
                 </a> 
             </div>
             <footer class="pr-footer">
-               <marquee id="project-description" behavior="styles" direction="right">3D CSS interactive cube</marquee>
+                <marquee id="project-description" behavior="styles" direction="left" onmouseover="this.stop()"; onmouseout="this.start()";> 
+                    React Redux app integrating an API to create a superHero Team</marquee>
             </footer>
         </div>
     </section>
