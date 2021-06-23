@@ -66,22 +66,30 @@ btn.addEventListener("click",function(){
 
 //DISPLAY PROJECTS
 
-let projectDescriptionOne = "3D CSS interactive cube";
-let projectDescriptionTwo= "Restaurant menu with dinamically added data.";
-let projectDescriptionThree = "Wordpress ONG donation site linked with Mercado Pago"
+let descripciones = {
+    1: "React Redux app integrating an API to create a superHero Team",
+    2: "3D CSS interactive cube",
+    3: "Restaurant menu with dinamically added data. Vanilla JS",
+    4: "Wordpress ONG donation site linked with Mercado Pago"
+}
 projectBtn.forEach(function(btn){
     btn.addEventListener("click", function(){
         let selectedClass= (btn.id +"-display");
-        let selectedProject = document.getElementById(selectedClass)
-        if(selectedProject.id == "pr2-display"){
-            marquee.textContent = projectDescriptionOne
+        switch(btn.id){
+            case "pr1":
+                marquee.textContent = descripciones[1]  
+                break;
+            case "pr2":
+                marquee.textContent = descripciones[2]
+                break;
+            case "pr3":
+                marquee.textContent = descripciones[3]
+                break;
+            case "pr4":
+                marquee.textContent = descripciones[4]
+                break;
         }
-        if(selectedProject.id == "pr3-display"){
-            marquee.textContent = projectDescriptionThree
-        }
-        else{
-            marquee.textContent = projectDescriptionTwo
-        }
+       
         projectBtn.forEach(function(item){
             if(item!== btn){
                 let selectedClass2= (item.id + "-display");
@@ -91,8 +99,8 @@ projectBtn.forEach(function(btn){
             }
         })
         for (let i of projects){
-             if (i.classList.contains(selectedClass)){
-                 i.classList.remove("hide")
+            if (i.classList.contains(selectedClass)){
+                i.classList.remove("hide")
             }
         }
         })
