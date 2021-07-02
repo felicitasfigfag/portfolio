@@ -289,7 +289,7 @@ a{
     margin: 0;
 }
 .react{
-    width: 50%;
+    width: 70%;
 }
 .sql{
     width: 30%;
@@ -297,8 +297,8 @@ a{
 .wordpress{
     width: 30%;
 }
-.js{
-    width: 80%;
+.php{
+    width: 70%;
 }
 .ruby{
     width: 70%;
@@ -306,8 +306,8 @@ a{
 .html{
     width: 100%;
 }
-.css{
-    width: 100%;
+.node{
+    width: 50%;
 }
 .git{
     width: 60%;
