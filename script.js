@@ -70,7 +70,8 @@ let descripciones = {
     1: "React Redux app integrating an API to create a superHero Team",
     2: "3D CSS interactive cube",
     3: "Restaurant menu with dinamically added data. Vanilla JS",
-    4: "Wordpress ONG donation site linked with Mercado Pago"
+    4: "Wordpress ONG donation site linked with Mercado Pago",
+    5: "NFT Auction landing and FAQS site"
 }
 projectBtn.forEach(function(btn){
     btn.addEventListener("click", function(){
@@ -87,6 +88,9 @@ projectBtn.forEach(function(btn){
                 break;
             case "pr4":
                 marquee.textContent = descripciones[4]
+                break;
+            case "pr5":
+                marquee.textContent = descripciones[5]
                 break;
         }
        

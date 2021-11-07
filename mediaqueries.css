@@ -137,6 +137,11 @@ body{
     background-size: cover;
     width: 100%;
 }
+#pr4-display{
+    background-image: url(./resources/project-5-small.png);
+    background-size: cover;
+    width: 100%;
+}
    /* TEXT */
    .text-window{
        width: 40%;
