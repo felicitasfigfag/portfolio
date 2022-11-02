@@ -67,11 +67,17 @@ btn.addEventListener("click",function(){
 //DISPLAY PROJECTS
 
 let descripciones = {
-    1: "React Redux app integrating an API to create a superHero Team",
-    2: "3D CSS interactive cube",
-    3: "Restaurant menu with dinamically added data. Vanilla JS",
-    4: "Wordpress ONG donation site linked with Mercado Pago",
-    5: "NFT Auction landing and FAQS site"
+    1: "NFT website layout using HTML and SASS",
+    2: "Health app. Landing page and web animations",
+    3: "Helped develop mobile version of the app",
+    4: "Graphic design portfolio. JS / CSS",
+    5: "Wordpress ONG donation site linked with Mercado Pago",
+    6: "Digital menu powered by HTML, CSS, JS",
+    7: "Institutional site for auto-parts company",
+    8: "Newsletter-type website for local soccer organization. Wordpress",
+    9: "React Redux app integrating an API to create a superHero Team",
+    10: "3D CSS interactive cube",
+    11: "NFT Auction landing and FAQS site"
 }
 projectBtn.forEach(function(btn){
     btn.addEventListener("click", function(){
@@ -91,6 +97,24 @@ projectBtn.forEach(function(btn){
                 break;
             case "pr5":
                 marquee.textContent = descripciones[5]
+                break;
+            case "pr6":
+                marquee.textContent = descripciones[6]
+                break;
+            case "pr7":
+                marquee.textContent = descripciones[7]
+                break;
+            case "pr8":
+                marquee.textContent = descripciones[8]
+                break;
+            case "pr9":
+                marquee.textContent = descripciones[9]
+                break;
+            case "pr10":
+                marquee.textContent = descripciones[10]
+                break;
+            case "pr11":
+                marquee.textContent = descripciones[11]
                 break;
         }
        
